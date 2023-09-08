@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
+# Introduction
+A React project for apply SOLID principles
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SOLID
 
-Currently, two official plugins are available:
+## Single responsability
+The Single Responsibility Principle states that a component should have
+one, and only one, reason to change. This means that a component should only have one job. If it has more
+than one job, it should be broken up into multiple components.
+This is a very important principle to follow. It makes your components easier to understand, easier to test, and easier to maintain.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### For example: 
+We have a component that displays a list of users. It
+also has a button that allows the user to add a new user. This component has two jobs. It displays a list of users, and it allows
+the user to add a new user. This component should be broken up into two
+components. One component should be responsible for displaying the list
+of users, and another component should be responsible for allowing the
+user to add a new user.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
