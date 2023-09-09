@@ -37,11 +37,14 @@ than one job, it should be broken up into multiple components.
 This is a very important principle to follow. It makes your components easier to understand, easier to test, and easier to maintain.
 
 #### For example: 
-We have a component that displays a list of users. It
-also has a button that allows the user to add a new user. This component has two jobs. It displays a list of users, and it allows
-the user to add a new user. This component should be broken up into two
-components. One component should be responsible for displaying the list
-of users, and another component should be responsible for allowing the
-user to add a new user.
+We have a component that displays a list of users. It also has a button that allows the user to add a new user. This component has two jobs. It displays a list of users, and it allows the user to add a new user. This component should be broken up into two components. One component should be responsible for displaying the list of users, and another component should be responsible for allowing the user to add a new user.
+
+## Open Closed
+The Open-Closed Principle states that entities should be open for extension but closed for modification. We should be able to add new functionality to a component without altering its existing code. This principle promotes code stability and minimizes the risk of introducing bugs when extending functionality.
+
+### For example:
+Suppose we have a Card Component in our React application that displays various types of content, such as text, images, and videos. Initially, the Card Component is designed to display each type of content. However, we anticipate that in the future, we may need to display more complex content types like images or interactive elements without modifying the Card Component's existing code.
+
+
 
 
