@@ -1,7 +1,14 @@
+import { useActivePosts } from './hooks/usePosts'
+import { PostItem } from './components/PostItem'
+
 export function SingleResponsibilityAfter() {
+  const { activePosts } = useActivePosts()
+
   return (
-    <div>
-      <h1>Single Responsibility Principle After</h1>
-    </div>
-  );
+    <ul>
+      {activePosts.map(post => 
+        <PostItem key={post.id} post={post} />
+      )}
+    </ul>    
+  )
 }
