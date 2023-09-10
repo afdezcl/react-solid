@@ -46,5 +46,11 @@ The Open-Closed Principle states that entities should be open for extension but 
 Suppose we have a Card Component in our React application that displays various types of content, such as text, images, and videos. Initially, the Card Component is designed to display each type of content. However, we anticipate that in the future, we may need to display more complex content types like images or interactive elements without modifying the Card Component's existing code.
 
 
+## Liskov Substitution
+The Liskov Substitution Principle states that the substype should be intercambiable by the main type
+
+### For example:
+
+
 
 
